@@ -3,7 +3,8 @@ package com.example.ldurazo.xboxplayerexcercise.asynctasks;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.example.ldurazo.xboxplayerexcercise.models.Constants;
+import com.example.ldurazo.xboxplayerexcercise.applications.AppSession;
+import com.example.ldurazo.xboxplayerexcercise.utils.Constants;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -27,15 +28,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TokenObtainableAsyncTask extends AsyncTask<Void, Void, String> {
-    private OnTokenTaskCallback callbacks;
-    public TokenObtainableAsyncTask(OnTokenTaskCallback callbacks) {
+public class TokenObtainableAsyncTask extends AsyncTask<Void, Void, String>{
+    private static final String TAG = "com.example.ldurazo.xboxplayerexcercise.asynctasks.tokenobtainableasynctask";
+    private TokenTaskCallback callbacks;
+
+    public TokenObtainableAsyncTask(TokenTaskCallback callbacks) {
         this.callbacks = callbacks;
     }
 
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
+        AppSession.getInstance().setAccessToken(result);
         if(!result.equals(Constants.ERROR)){
             callbacks.onTokenReceived(result);
         }else{
@@ -54,10 +58,8 @@ public class TokenObtainableAsyncTask extends AsyncTask<Void, Void, String> {
                 while((inputLine=bufferedReader.readLine())!=null){
                     stringBuilder.append(inputLine);
                 }
-                Log.w(Constants.TAG,stringBuilder.toString());
+                Log.w(TAG,stringBuilder.toString());
                 return retrieveToken(stringBuilder.toString());
-            }else {
-                return Constants.ERROR;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -68,18 +70,19 @@ public class TokenObtainableAsyncTask extends AsyncTask<Void, Void, String> {
     private InputStream establishConnection(){
         try {
             HttpParams httpParameters = new BasicHttpParams();
-            int timeoutConnection = 10000; //Timeout until a connection is established.
-            int timeoutSocket = 10000; //Timeout for waiting for data.
+            int timeoutConnection = 5000; //Timeout until a connection is established.
+            int timeoutSocket = 50000; //Timeout for waiting for data.
             HttpConnectionParams.setSoTimeout(httpParameters, timeoutSocket);
             HttpConnectionParams.setConnectionTimeout(httpParameters, timeoutConnection);
             HttpClient client = new DefaultHttpClient(httpParameters);
-            HttpPost request = new HttpPost(Constants.SERVICE);
-            request.setHeader("Content_type", Constants.CONTENT_TYPE);
+            HttpPost request = new HttpPost(AppSession.SERVICE);
+            request.setHeader("Content_type", AppSession.CONTENT_TYPE);
+            request.setHeader("Accept", "application/json");
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(4);
-            nameValuePairs.add(new BasicNameValuePair("client_id",Constants.CLIENT_ID));
-            nameValuePairs.add(new BasicNameValuePair("client_secret",Constants.CLIENT_SECRET));
-            nameValuePairs.add(new BasicNameValuePair("scope",Constants.SCOPE));
-            nameValuePairs.add(new BasicNameValuePair("grant_type",Constants.GRANT_TYPE));
+            nameValuePairs.add(new BasicNameValuePair("client_id", AppSession.CLIENT_ID));
+            nameValuePairs.add(new BasicNameValuePair("client_secret", AppSession.CLIENT_SECRET));
+            nameValuePairs.add(new BasicNameValuePair("scope", AppSession.SCOPE));
+            nameValuePairs.add(new BasicNameValuePair("grant_type", AppSession.GRANT_TYPE));
             request.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             HttpResponse response = client.execute(request);
             HttpEntity entity = response.getEntity();

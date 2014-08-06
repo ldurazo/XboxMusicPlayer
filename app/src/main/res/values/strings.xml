@@ -5,5 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_player">PlayerActivity</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_music_player">MusicPlayer</string>
 
 </resources>

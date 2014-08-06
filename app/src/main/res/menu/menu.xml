@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ldurazo.xboxplayerexcercise.activities.MyActivity" >
+
+    <item android:id="@+id/search_action"
+        android:title="Search"
+        android:icon="@drawable/search_icon"
+        android:showAsAction="collapseActionView|ifRoom"/>
+
+</menu>
