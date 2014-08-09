@@ -7,5 +7,6 @@
     <string name="title_activity_player">PlayerActivity</string>
     <string name="title_activity_my">MyActivity</string>
     <string name="title_activity_music_player">MusicPlayer</string>
+    <string name="title_list_drawer">Track list</string>
 
 </resources>

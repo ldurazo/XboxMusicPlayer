@@ -1,7 +1,7 @@
 package com.example.ldurazo.xboxplayerexcercise.adapters;
 
 /**
- * Created by ldurazo on 8/1/2014 and 3:48 PM.
+ * Used to send a List as an extra, use it when needed, delete if always unused
  */
 
 import com.example.ldurazo.xboxplayerexcercise.models.Track;

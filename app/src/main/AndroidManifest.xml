@@ -24,14 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.SearchActivity"
-            android:configChanges="orientation|screenSize"
-            android:inputType="textNoSuggestions"
-            android:label="@string/title_activity_player"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
-        <activity
-            android:name=".activities.MusicPlayer"
+            android:name=".activities.MusicPlayerActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_music_player" >
@@ -39,8 +32,7 @@
 
         <service
             android:name=".controllers.MusicService"
-            android:enabled="true"
-            android:exported="true" >
+            android:enabled="true" >
         </service>
     </application>
 
