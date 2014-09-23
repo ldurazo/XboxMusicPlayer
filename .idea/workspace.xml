@@ -33,18 +33,8 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.example.ldurazo.xboxplayerexcercise" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e8098d3-5722-4910-93c2-f43460013055" name="Default" comment="Xbox music API fixed a response error and updated to get responses">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/XboxMusicPlayer.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/controllers/MusicService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/MusicService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/controllers/ServiceChanges.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/ServiceChanges.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/controllers/TokenRefreshBroadcastReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/TokenRefreshBroadcastReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/LauncherActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/LauncherActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/MusicPlayerActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/MusicPlayerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_19_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="2e8098d3-5722-4910-93c2-f43460013055" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/utils/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/utils/Constants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="XboxPlayerExcercise.iws" />
@@ -73,94 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AppSession.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AppSession.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/applications/AppSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1314">
+            <state vertical-scroll-proportion="0.2987013" vertical-offset="161" max-vertical-offset="1188">
               <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/applications/BaseApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1728">
-              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TokenRefreshBroadcastReceiver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/TokenRefreshBroadcastReceiver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MusicService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/MusicService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="611" max-vertical-offset="3114">
-              <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-              <folding>
-                <element signature="e#4781#5212#0" expanded="true" />
-                <element signature="e#5214#5411#0" expanded="true" />
-                <element signature="e#5400#5401#0" expanded="true" />
-                <element signature="n#!!doc;n#getPosn#0;n#MusicService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceChanges.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/ServiceChanges.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TokenObtainableAsyncTask.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/asynctasks/TokenObtainableAsyncTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="1494">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MusicPlayerActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/MusicPlayerActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20357142" vertical-offset="1884" max-vertical-offset="4176">
-              <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
-              <folding>
-                <element signature="n#!!doc;n#onKeyDown#0;n#MusicPlayerActivity#0" expanded="false" />
-                <element signature="method#onQueryTextChange#0;class#6314:9752" expanded="false" />
-                <element signature="e#7376#8921#0" expanded="true" />
-                <element signature="e#8894#8895#0" expanded="true" />
-                <element signature="n#!!doc;n#musicConnection#0;n#MusicPlayerActivity#0" expanded="false" />
-                <element signature="e#12636#12637#0" expanded="true" />
-                <element signature="e#12713#12714#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="612">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1282,13 +1189,15 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/SearchActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/BaseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/controllers/ServiceChanges.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/controllers/MusicService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/TokenRefreshBroadcastReceiver.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/MusicService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/ServiceChanges.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/MusicPlayerActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/BaseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/TokenRefreshBroadcastReceiver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/asynctasks/TokenTaskCallback.java" />
       </list>
     </option>
   </component>
@@ -1360,8 +1269,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1687,6 +1594,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1914,7 +1823,11 @@
       <created>1406597021408</created>
       <updated>1406597021408</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Xbox music API fixed a response error and updated to get responses">
+      <created>1411497099262</created>
+      <updated>1411497099262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1924,7 +1837,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32837528" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1946,6 +1858,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32837528" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2007,7 +1920,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="36" />
+      <option name="time" value="37" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -2106,11 +2019,7 @@
           <folding>
             <element signature="n#!!doc;n#onKeyDown#0;n#MusicPlayerActivity#0" expanded="false" />
             <element signature="method#onQueryTextChange#0;class#6314:9752" expanded="false" />
-            <element signature="e#7376#8921#0" expanded="true" />
-            <element signature="e#8894#8895#0" expanded="true" />
             <element signature="n#!!doc;n#musicConnection#0;n#MusicPlayerActivity#0" expanded="false" />
-            <element signature="e#12636#12637#0" expanded="true" />
-            <element signature="e#12713#12714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2188,13 +2097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13918129" vertical-offset="0" max-vertical-offset="855">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XboxPlayerExcercise.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14133017" vertical-offset="0" max-vertical-offset="842">
@@ -2254,14 +2156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/LauncherActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.321428" vertical-offset="529" max-vertical-offset="1343">
-          <caret line="76" column="83" selection-start-line="76" selection-start-column="83" selection-end-line="76" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_music_player.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2286,18 +2180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-          <folding>
-            <element signature="e#465#483#0" expanded="false" />
-            <element signature="e#781#799#0" expanded="false" />
-            <element signature="e#1221#1258#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/models/Track.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5855107" vertical-offset="0" max-vertical-offset="842">
@@ -2315,32 +2197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="25" column="71" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/asynctasks/TokenTaskCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15403423" vertical-offset="0" max-vertical-offset="818">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/adapters/SearchAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35207823" vertical-offset="0" max-vertical-offset="990">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/applications/AppSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1314">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2352,35 +2212,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/applications/BaseApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1728">
-          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/TokenRefreshBroadcastReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/asynctasks/TokenObtainableAsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="704" max-vertical-offset="1494">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-19/android.jar!/android/app/Activity.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29016787" vertical-offset="910" max-vertical-offset="8010">
           <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2392,40 +2227,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/MusicService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/utils/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="611" max-vertical-offset="3114">
-          <caret line="164" column="13" selection-start-line="164" selection-start-column="13" selection-end-line="164" selection-end-column="13" />
-          <folding>
-            <element signature="e#4781#5212#0" expanded="true" />
-            <element signature="e#5214#5411#0" expanded="true" />
-            <element signature="e#5400#5401#0" expanded="true" />
-            <element signature="n#!!doc;n#getPosn#0;n#MusicService#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/asynctasks/TokenTaskCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1700118" vertical-offset="0" max-vertical-offset="847">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/ServiceChanges.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.04250295" vertical-offset="0" max-vertical-offset="847">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/MusicPlayerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20357142" vertical-offset="1884" max-vertical-offset="4176">
-          <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1008" max-vertical-offset="4086">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
           <folding>
             <element signature="n#!!doc;n#onKeyDown#0;n#MusicPlayerActivity#0" expanded="false" />
             <element signature="method#onQueryTextChange#0;class#6314:9752" expanded="false" />
-            <element signature="e#7376#8921#0" expanded="true" />
-            <element signature="e#8894#8895#0" expanded="true" />
             <element signature="n#!!doc;n#musicConnection#0;n#MusicPlayerActivity#0" expanded="false" />
-            <element signature="e#12636#12637#0" expanded="true" />
-            <element signature="e#12713#12714#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/LauncherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1422">
+          <caret line="76" column="83" selection-start-line="76" selection-start-column="83" selection-end-line="76" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/MusicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1727" max-vertical-offset="3240">
+          <caret line="158" column="69" selection-start-line="158" selection-start-column="69" selection-end-line="158" selection-end-column="69" />
+          <folding>
+            <element signature="e#4781#5212#0" expanded="true" />
+            <element signature="e#5201#5202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/asynctasks/TokenObtainableAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1494">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/activities/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/services/TokenRefreshBroadcastReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31877214" vertical-offset="0" max-vertical-offset="847">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6162928" vertical-offset="0" max-vertical-offset="847">
+          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/applications/BaseApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10625738" vertical-offset="216" max-vertical-offset="1728">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ldurazo/xboxplayerexcercise/applications/AppSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2987013" vertical-offset="161" max-vertical-offset="1188">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
