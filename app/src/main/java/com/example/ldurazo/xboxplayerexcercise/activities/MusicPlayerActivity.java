@@ -32,9 +32,9 @@ import com.example.ldurazo.xboxplayerexcercise.R;
 import com.example.ldurazo.xboxplayerexcercise.adapters.SearchAdapter;
 import com.example.ldurazo.xboxplayerexcercise.applications.AppSession;
 import com.example.ldurazo.xboxplayerexcercise.applications.BaseApp;
-import com.example.ldurazo.xboxplayerexcercise.controllers.MusicService;
-import com.example.ldurazo.xboxplayerexcercise.controllers.MusicService.MusicBinder;
-import com.example.ldurazo.xboxplayerexcercise.controllers.ServiceChanges;
+import com.example.ldurazo.xboxplayerexcercise.services.MusicService;
+import com.example.ldurazo.xboxplayerexcercise.services.MusicService.MusicBinder;
+import com.example.ldurazo.xboxplayerexcercise.services.ServiceChanges;
 import com.example.ldurazo.xboxplayerexcercise.models.Track;
 import com.example.ldurazo.xboxplayerexcercise.utils.Constants;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -53,8 +53,6 @@ public class MusicPlayerActivity extends BaseActivity implements MediaPlayerCont
     private ArrayList<Track> mTrackList = new ArrayList<Track>();
     private ImageView mPlayerImageView;
     private SearchView mSearchView;
-    public static final String TRACK_LIST="TrackList";
-    public static final String FIRST_TRACK="FirstTrack";
     private int mCurrentTrack;
     private ImageLoader mImageLoader;
     private TextView mNowPlayingTextView;
@@ -84,10 +82,10 @@ public class MusicPlayerActivity extends BaseActivity implements MediaPlayerCont
 
     @Override
     protected void onDestroy() {
+        super.onDestroy();
         controller = null;
         unbindService(musicConnection);
         stopService(playIntent);
-        super.onDestroy();
     }
 
     @Override
@@ -201,10 +199,8 @@ public class MusicPlayerActivity extends BaseActivity implements MediaPlayerCont
                             @Override
                             public void onResponse(String response) {
                                 Log.w(TAG, response);
-                                response = response.substring(3);
-                                JSONObject parentData = null;
                                 try {
-                                    parentData = new JSONObject(response);
+                                    JSONObject parentData = new JSONObject(response);
                                     JSONObject searchTypeObject = parentData.getJSONObject(Track.TRACKS);
                                     JSONArray searchResults = searchTypeObject.getJSONArray("Items");
                                     JSONObject searchObject;
@@ -346,9 +342,7 @@ public class MusicPlayerActivity extends BaseActivity implements MediaPlayerCont
 
     @Override
     public boolean isPlaying() {
-        if(musicSrv!=null && musicBound)
-        return musicSrv.isPlaying();
-        return false;
+        return musicSrv != null && musicBound && musicSrv.isPlaying();
     }
 
     @Override

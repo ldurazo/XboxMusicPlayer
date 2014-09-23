@@ -1,4 +1,4 @@
-package com.example.ldurazo.xboxplayerexcercise.controllers;
+package com.example.ldurazo.xboxplayerexcercise.services;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

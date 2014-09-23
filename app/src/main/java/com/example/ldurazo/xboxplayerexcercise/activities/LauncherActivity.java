@@ -16,7 +16,7 @@ import com.example.ldurazo.xboxplayerexcercise.R;
 import com.example.ldurazo.xboxplayerexcercise.applications.AppSession;
 import com.example.ldurazo.xboxplayerexcercise.asynctasks.TokenObtainableAsyncTask;
 import com.example.ldurazo.xboxplayerexcercise.asynctasks.TokenTaskCallback;
-import com.example.ldurazo.xboxplayerexcercise.controllers.TokenRefreshBroadcastReceiver;
+import com.example.ldurazo.xboxplayerexcercise.services.TokenRefreshBroadcastReceiver;
 
 
 public class LauncherActivity extends Activity implements TokenTaskCallback {

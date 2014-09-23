@@ -1,4 +1,4 @@
-package com.example.ldurazo.xboxplayerexcercise.controllers;
+package com.example.ldurazo.xboxplayerexcercise.services;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -70,7 +70,6 @@ public class MusicService extends Service implements
     @Override
     public void onDestroy() {
         super.onDestroy();
-        //TODO enable the line below when the notification in onPrepared is ready
         stopForeground(true);
     }
 
@@ -92,7 +91,6 @@ public class MusicService extends Service implements
     @Override
     public void onPrepared(MediaPlayer mediaPlayer) {
         mediaPlayer.start();
-        //TODO navigation to go back to the player
         Intent notIntent = new Intent(this, MusicPlayerActivity.class);
         notIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendInt = PendingIntent.getActivity(this, 0,
@@ -157,7 +155,6 @@ public class MusicService extends Service implements
         StringRequest request = new StringRequest(Request.Method.GET, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response){
-                response = response.substring(3);
                 try {
                     JSONObject parentData = new JSONObject(response);
                     playSongFromUrl(parentData.getString("Url"));
