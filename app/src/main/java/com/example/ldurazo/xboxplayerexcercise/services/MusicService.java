@@ -36,7 +36,6 @@ public class MusicService extends Service implements
     private int songPosn;
     private ServiceChanges mCallback;
     private final IBinder musicBind = new MusicBinder();
-    private String trackUrl;
 
     public class MusicBinder extends Binder {
         public MusicService getService(ServiceChanges callback) {
@@ -44,6 +43,7 @@ public class MusicService extends Service implements
             return MusicService.this;
         }
     }
+
     public void initTrack(ArrayList<Track> trackList, int songPosn){
         this.trackList = trackList;
         this.songPosn = songPosn;
@@ -91,10 +91,10 @@ public class MusicService extends Service implements
     @Override
     public void onPrepared(MediaPlayer mediaPlayer) {
         mediaPlayer.start();
-        Intent notIntent = new Intent(this, MusicPlayerActivity.class);
-        notIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Intent notificationIntent = new Intent(this, MusicPlayerActivity.class);
+        notificationIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendInt = PendingIntent.getActivity(this, 0,
-                notIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+                notificationIntent, PendingIntent.FLAG_CANCEL_CURRENT);
         Notification.Builder builder = new Notification.Builder(this);
         builder.setContentIntent(pendInt)
                 .setSmallIcon(android.R.drawable.ic_media_play)
@@ -174,9 +174,8 @@ public class MusicService extends Service implements
 
     public void playSongFromUrl(String streamURL) {
         if (streamURL != null) {
-            trackUrl = streamURL;
             try {
-                Uri trackUri = Uri.parse(trackUrl);
+                Uri trackUri = Uri.parse(streamURL);
                 player.setDataSource(getBaseContext(), trackUri);
                 mCallback.onNewSongPlayed(songPosn);
             } catch (Exception e) {
